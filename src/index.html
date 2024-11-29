@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Validação</title>
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div id="primaryCard" class="bg-white shadow-lg rounded-lg p-8 w-96">
+      <h2 class="text-2xl font-bold mb-6 text-center">
+        Validação de Informações do nosso namoro
+      </h2>
+      <form id="validationForm">
+        <!-- Nome -->
+        <div class="mb-4">
+          <label for="nome" class="block text-sm font-medium text-gray-700"
+            >Nome:</label
+          >
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            class="mt-1 block p-2 w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+            placeholder="Digite seu nome"
+          />
+        </div>
+
+        <!-- Sobrenome -->
+        <div class="mb-4">
+          <label for="sobrenome" class="block text-sm font-medium text-gray-700"
+            >Sobrenome:</label
+          >
+          <input
+            type="text"
+            id="sobrenome"
+            name="sobrenome"
+            class="mt-1 block p-2 w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+            placeholder="Digite seu sobrenome"
+          />
+        </div>
+
+        <!-- Data do Namoro -->
+        <div class="mb-6">
+          <label
+            for="data-namoro"
+            class="block text-sm font-medium text-gray-700"
+            >Data em que te pedi em Namoro:</label
+          >
+          <input
+            type="date"
+            id="data-namoro"
+            name="data-namoro"
+            class="mt-1 block p-2 w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+            
+          />
+        </div>
+
+        <!-- Botão -->
+        <button
+          type="button"
+          id="submitBtn"
+          class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        >
+          Verificar
+        </button>
+      </form>
+      <div id="message" class="mt-4 text-center"></div>
+    </div>
+
+    <!-- Segundo Card -->
+    <div id="secondCard" class="hidden bg-white shadow-lg rounded-lg p-8 w-96">
+      <h2 class="text-2xl font-bold mb-6 text-center">
+        Validação do Tempo de Namoro
+      </h2>
+      <form id="secondForm">
+        <!-- Anos de Namoro -->
+        <div class="mb-4">
+          <label for="anos" class="block text-sm font-medium text-gray-700"
+            >Quantos anos de namoro?</label
+          >
+          <input
+            type="number"
+            id="anos"
+            name="anos"
+            class="mt-1 block p-2 w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+          />
+        </div>
+
+        <!-- Meses de Namoro -->
+        <div class="mb-4">
+          <label for="meses" class="block text-sm font-medium text-gray-700"
+            >Quantos meses de namoro?</label
+          >
+          <input
+            type="number"
+            id="meses"
+            name="meses"
+            class="mt-1 block p-2 w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
+          />
+        </div>
+
+        <!-- Botão -->
+        <button
+          type="button"
+          id="secondSubmitBtn"
+          class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        >
+          Verificar Tempo de Namoro
+        </button>
+      </form>
+      <div id="secondMessage" class="mt-4 text-center"></div>
+    </div>
+
+    <!-- Terceiro Card -->
+    <div id="thirdCard" class="hidden bg-white shadow-lg rounded-lg p-8 w-96 text-center relative overflow-hidden">
+      <div class="absolute inset-0 animate-pulse">
+        <div
+          class="absolute top-0 right-0 w-32 h-32 bg-red-300 rounded-full blur-xl opacity-50"
+        ></div>
+        <div
+          class="absolute bottom-0 left-0 w-32 h-32 bg-blue-300 rounded-full blur-xl opacity-50"
+        ></div>
+      </div>
+
+      <!-- Flexbox container para alinhar o texto e as imagens -->
+      <div class="relative z-10 flex flex-col justify-between h-full p-3 m-5">
+        <h2 class="text-2xl font-bold mb-4 text-pink-500 animate-bounce">
+          Parabéns pelos 2 anos e 7 meses juntinhosssososso! 🎉🎉🎉🎉🎉
+        </h2>
+        <p class="text-lg text-gray-700 mb-4">
+          AAIAIAAIIAAIAI eu te amo muitoeoeoeeee! 💖 Obrigado por estar ao meu
+          lado, mia menininhaaaa! 🥰🥰🥰
+        </p>
+      </div>
+
+      <!-- Imagens posicionadas nos cantos com "absolute" -->
+      <div class="absolute top-2 left-2 w-12 h-12">
+        <img
+          src="./imgs/in-love.png"
+          alt="Balão"
+          class="w-full h-full animate-float"
+        />
+      </div>
+      <div class="absolute top-2 right-2 w-12 h-12">
+        <img
+          src="./imgs/love-birds.png"
+          alt="Balão"
+          class="w-full h-full animate-float delay-200"
+        />
+      </div>
+      <div class="absolute bottom-2 left-2 w-12 h-12">
+        <img
+          src="./imgs/love2.png"
+          alt="Balão"
+          class="w-full h-full animate-float delay-400"
+        />
+      </div>
+      <div class="absolute bottom-2 right-2 w-12 h-12">
+        <img
+          src="./imgs/relationship.png"
+          alt="Balão"
+          class="w-full h-full animate-float delay-600"
+        />
+      </div>
+      
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
