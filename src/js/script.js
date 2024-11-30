@@ -56,7 +56,7 @@ document.getElementById("submitBtn").addEventListener("click", () => {
 // Validação do segundo card
 document.getElementById("secondSubmitBtn").addEventListener("click", () => {
   const correctYears = 2;
-  const correctMonths = 7;
+  const correctMonths = 6;
 
   const yearsInput = parseInt(document.getElementById("anos").value.trim());
   const monthsInput = parseInt(document.getElementById("meses").value.trim());
